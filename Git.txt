@@ -1,0 +1,49 @@
+ 首先是身份验证
+git config --global user.name "lu xun"
+
+ git config --global user.email "1923378722@qq.com"
+官网创建远程仓库
+
+
+与远程仓库关联
+git remote add origin https://github.com/Rollin-Liu/mydb02.git
+git remote add origin https://github.com/fuzhuzhen/luxun.git
+
+初始化：
+git init
+
+添加文件到暂存区
+git   add<file_name>
+//或者添加所有文件                                                
+git add .
+
+提交你的更改到本地仓库
+git commit -m "Initial commit"   
+
+创建新的文件并提交
+echo "好久不见!" > hello.txt
+git add hello.txt
+git commit -m "Add hello.txt"
+
+与远程仓库关联
+git remote add origin remote_repository_URL
+
+本地的更改推送远程仓库
+git push -u origin master
+
+
+将本地仓库的改动推送到仓库
+git push
+
+获取远程仓库的最新变动
+git pull
+
+设置远程地址
+git remote add origin <repository_url>
+
+查看远程仓库
+git remote -v
+
+删除文件
+git rm newfile.txt
+git commit -m "newfile.txt"
